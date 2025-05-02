@@ -1,0 +1,32 @@
+<h1>Switch Case</h1>
+
+<button (click)="onBtnClick('red')">Red</button>
+<button (click)="onBtnClick('yellow')">Yellow</button>
+<button (click)="onBtnClick('green')">Green</button>
+<button (click)="onBtnClick('')">Black</button>
+
+<input type="text" (input)="enteredValue($event)">
+
+
+@switch (color) {
+    @case ('red') {
+        <div style="height: 100px; width: 100px; background-color: red;">
+
+        </div>
+    }
+    @case ('yellow') {
+        <div style="height: 100px; width: 100px; background-color: yellow;">
+
+        </div>
+    }
+    @case ('green') {
+        <div style="height: 100px; width: 100px; background-color: green;">
+
+        </div>
+    }
+    @default{
+        <div style="height: 100px; width: 100px; background-color: black;">
+
+        </div>
+    }
+}

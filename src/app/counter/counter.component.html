@@ -1,0 +1,13 @@
+<div >
+    <h1>{{count}}</h1>
+</div>
+<input type="text" [(ngModel)]="inputValue" (input)="onInput($event)" />
+<div>
+    <button (click)="decrement()">Decrement</button>
+</div>
+<div>
+    <button (click)="reset()">Reset</button>
+</div>
+<div>
+    <button (click)="increment()">Increment</button>
+</div>

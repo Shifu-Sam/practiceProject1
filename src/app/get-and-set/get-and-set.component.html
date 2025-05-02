@@ -1,0 +1,14 @@
+<h1>Get And Set Operations</h1>
+<div class="MyName">
+    <h1>Hello {{displayName}}</h1>
+    <input value="{{name}}" type="text" (input)="onInput($event)">
+    <button (click)="getNameBtn()">Get Name</button>
+    <button (click)="setNameBtn()">Set Name</button>
+</div>
+
+<div class="MyEmail">
+    <h1>Eamil {{displayEmail}}</h1>
+    <input value='{{email}}' type="text" #enteredEmail> //By using Reference Variable we can accses the value of email feild.
+    <button (click)="getEmailBtn(enteredEmail.value)" >Get Email</button>
+    <button (click)="setEmailBtn()">Set Email</button>
+</div>

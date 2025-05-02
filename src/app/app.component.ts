@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { CounterComponent } from './counter/counter.component';
 import { GetAndSetComponent } from "./get-and-set/get-and-set.component";
 import { IfelseComponent } from "./ifelse/ifelse.component";
+import { ElseifComponent } from "./elseif/elseif.component";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CounterComponent, GetAndSetComponent, IfelseComponent],
+  imports: [RouterOutlet, CounterComponent, GetAndSetComponent, IfelseComponent, ElseifComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

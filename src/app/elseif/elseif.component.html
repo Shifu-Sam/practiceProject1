@@ -1,0 +1,23 @@
+<button (click)="onBtnClick(1)">Red Div</button>
+<button (click)="onBtnClick(2)">Green Div</button>
+<button (click)="onBtnClick(3)">Blue Div</button>
+<button (click)="onBtnClick(10)">Black Div</button>
+<input type="text" (input)="fieldValue($event)">
+
+@if(color == 1){
+    <div style="width: 100px; height:100px; background-color: red;">
+
+    </div>
+}@else if (color == 2) {
+    <div style="width: 100px; height:100px; background-color: green;">
+
+    </div>
+}@else if(color == 3){
+    <div style="width: 100px; height:100px; background-color: blue;">
+
+    </div>
+}@else {
+    <div style="width: 100px; height:100px; background-color: black;">
+
+    </div>
+}

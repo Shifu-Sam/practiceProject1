@@ -1,0 +1,30 @@
+<h1>If-Else Condition</h1>
+
+<button (click)="hide()">Hide Div</button>
+<button (click)="show()">Show Div</button>
+<button (click)="toggle()">Toggel Div</button>
+
+@if(display){
+    <div style="width:100px; height:100px; background-color:red">
+
+    </div>
+}
+
+<!-- @if(x>6){
+    <div style="width:100px; height:100px; background-color:red">
+
+    </div>
+} -->
+
+
+<hr>
+<button (click)="toggleTwo()">{{toggleDiv ? 'Show Aqua Div' : 'Show Black Div'}}</button>
+@if(toggleDiv){
+    <div style="width: 100px; height:100px; background-color: black;">
+
+    </div>
+}@else{
+    <div style="width: 100px; height:100px; background-color: aqua;">
+
+    </div>
+}

@@ -1,0 +1,12 @@
+<h1>Enter new Task</h1>
+
+<input [(ngModel)]="task" placeholder="Enter New Task">
+<button (click)="addTask()">Add Task</button>
+
+@for(task of tasks; track task; let i = $index){
+    <div style="display: flex; justify-content: space-between;">
+        <p>{{i+1}}</p>
+        <p>{{task}}<p></p>
+        <button (click)="deleteTask(i)">Delete</button>
+    </div><br>
+}

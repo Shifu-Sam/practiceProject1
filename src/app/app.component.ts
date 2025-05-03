@@ -6,11 +6,13 @@ import { IfelseComponent } from "./ifelse/ifelse.component";
 import { ElseifComponent } from "./elseif/elseif.component";
 import { SwitchComponent } from "./switch/switch.component";
 import { ForLoopComponent } from "./for-loop/for-loop.component";
+import { SignalCompComponent } from "./signal-comp/signal-comp.component";
+import { ToDoListComponent } from "./to-do-list/to-do-list.component";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CounterComponent, GetAndSetComponent, IfelseComponent, ElseifComponent, SwitchComponent, ForLoopComponent],
+  imports: [RouterOutlet, CounterComponent, GetAndSetComponent, IfelseComponent, ElseifComponent, SwitchComponent, ForLoopComponent, SignalCompComponent, ToDoListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

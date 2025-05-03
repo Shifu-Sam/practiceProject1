@@ -5,11 +5,12 @@ import { GetAndSetComponent } from "./get-and-set/get-and-set.component";
 import { IfelseComponent } from "./ifelse/ifelse.component";
 import { ElseifComponent } from "./elseif/elseif.component";
 import { SwitchComponent } from "./switch/switch.component";
+import { ForLoopComponent } from "./for-loop/for-loop.component";
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CounterComponent, GetAndSetComponent, IfelseComponent, ElseifComponent, SwitchComponent],
+  imports: [RouterOutlet, CounterComponent, GetAndSetComponent, IfelseComponent, ElseifComponent, SwitchComponent, ForLoopComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

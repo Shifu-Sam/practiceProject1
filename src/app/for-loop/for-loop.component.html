@@ -1,0 +1,13 @@
+<h1>For Loop</h1>
+@for(student of students; track student){
+    <h1>{{student}}</h1>
+}
+
+<hr>
+
+@for(student of class; track student; let id = $index){
+    <h1 style="display: inline; margin-right: 10px;">{{id+1}}.</h1>
+    <h1 style="display: inline; margin-right: 10px;">{{student.name}}</h1>
+    <h1 style="display: inline; margin-right: 10px;">{{student.rollNo}}</h1>
+    <h1 style="display: inline; ">{{student.age}}</h1><br>
+}
